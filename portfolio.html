@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        scroll-padding-top: 64px; /* 헤더 높이만큼 여백 */
+      }
+    </style>
+  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <body class="bg-black text-white font-sans flex-row justify-center">
+    <header
+      class="flex items-center justify-between p-4 bg-gray-800 text-white shadow-md fixed top-0 left-0 w-full z-10"
+    >
+      <!-- 로고 -->
+      <div>
+        <a href="#" class="text-lg font-bold"> 🖥️ Portfolio</a>
+      </div>
+
+      <!-- 내비게이션 (선택 사항, 포트폴리오에 따라 필요 없을 수도 있습니다) -->
+      <nav class="hidden md:flex space-x-6">
+        <div class="relative group">
+          <a href="#about-me" class="hover:text-gray-300 py-2">About</a>
+          <div
+            class="absolute left-0 mt-0 w-48 bg-gray-800 rounded-lg shadow-lg py-2 hidden group-hover:block"
+          >
+            <div class="pt-2">
+              <a
+                href="#about-me"
+                class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700"
+                >About Me</a
+              >
+              <a
+                href="#education"
+                class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700"
+                >Education</a
+              >
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://www.notion.so/namung08/Hi-I-m-Sang-Jun-aa1b4285642c4c12a34dff895c3f05df?pvs=4#b7696f22d8ef4ecb981cd4ebcb18e6b9"
+          class="hover:text-gray-300"
+          >Projects</a
+        >
+        <a href="#contact-me" class="hover:text-gray-300">Contact</a>
+      </nav>
+
+      <!-- 버튼 (예: 이력서 다운로드 또는 외부 링크) -->
+      <div>
+        <a
+          href="#"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+          >Resume</a
+        >
+      </div>
+
+      <!-- 모바일 햄버거 메뉴 아이콘 (모바일 내비게이션이 필요하다면 추가) -->
+      <div class="md:hidden">
+        <button class="text-white">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <img
+      class="w-full h-40 object-cover md:h-64 lg:h-80"
+      src="img/developer.jpg"
+      alt="header img"
+    />
+    <main class="mx-auto max-w-lg md:max-w-xl lg:max-w-2xl pt-16 mb-10">
+      <section class="mb-10">
+        <div id="about-me" class="flex-col md:flex-row pb-5 md:items-center">
+          <div class="flex">
+            <img
+              src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f9d1-200d-1f4bb.svg"
+              alt=""
+              class="h-10 align-middle pr-2"
+            />
+            <h2 class="text-4xl font-bold mb-5">
+              노력하는 개발자 이상준입니다.
+            </h2>
+          </div>
+          <div class="border-l border-gray-400 pl-4">
+            <p>
+              귀사의 신입으로서
+              <strong class="font-bold">성실하게 업무를 수행</strong>하며,
+              끊임없이 배우고
+              <strong class="font-bold">성장하는 개발자</strong>가 되겠습니다.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+          <div class="max-w-xs md:max-w-sm flex justify-center items-center">
+            <img
+              src="img/img.jpg"
+              alt="내 프로필 사진"
+              class="h-auto object-cover p-10"
+            />
+          </div>
+          <div
+            class="pl-0 md:pl-10 flex-1 pt-5 md:pt-10 text-center md:text-left"
+          >
+            <section>
+              <p class="pb-3">🎂 Birth</p>
+              <p class="pb-3">2001.03.27</p>
+            </section>
+            <section>
+              <p class="pb-3">✉️ E-Mail</p>
+              <p class="pb-3">
+                <a
+                  href="mailto:namung08@gmail.com"
+                  class="text-gray-400 hover:underline"
+                  >namung08@gmail.com</a
+                >
+              </p>
+            </section>
+            <section>
+              <p class="pb-3">🐱 Github</p>
+              <p class="pb-3">
+                <a
+                  href="https://github.com/namung08"
+                  class="text-gray-400 hover:underline"
+                  target="_blank"
+                  >github.com/namung08</a
+                >
+              </p>
+            </section>
+            <section>
+              <p class="pb-3">💾 Tech Blog</p>
+              <p class="pb-3">
+                <a
+                  href="https://namung08.tistory.com/"
+                  class="text-gray-400 hover:underline"
+                  target="_blank"
+                  >namung08.tistory.com</a
+                >
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="mb-5">
+        <div>
+          <p class="text-3xl font-bold">🙋‍♂️ About me</p>
+          <hr class="border-t border-gray-700 my-3 w-full" />
+          <ul class="list-disc pl-5 space-y-2">
+            <li>
+              <strong>Spring Boot</strong>를 사용하여
+              <strong>Rest API</strong>를 만들 수 있습니다.
+            </li>
+            <li>
+              개발 과정에서 유지보수를 위해서 코드를 어떻게 짜야할지 생각합니다.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="mb-5" id="education">
+        <p class="text-3xl font-bold">📖 education</p>
+        <hr class="border-t border-gray-700 my-3 w-full" />
+        <div class="grid grid-cols-1 gap-4">
+          <!-- 1 -->
+          <div class="bg-gray-800 rounded-lg p-4">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between mb-2"
+            >
+              <div class="text-sm text-gray-400">2020.03 ~ 2024.02</div>
+              <div class="text-sm text-gray-400">졸업</div>
+            </div>
+            <div class="mb-2">
+              <a
+                href="https://info.ansan.ac.kr/info"
+                class="text-lg font-medium hover:underline"
+                target="_blank"
+                >안산대학교</a
+              >
+            </div>
+            <div class="text-gray-300">컴퓨터정보학과</div>
+          </div>
+          <!-- 2 -->
+          <div class="bg-gray-800 rounded-lg p-4">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between mb-2"
+            >
+              <div class="text-sm text-gray-400">2023.12 ~ 2024.06</div>
+              <div class="text-sm text-gray-400">수료</div>
+            </div>
+            <div class="mb-2">
+              <a
+                href="https://blog.naver.com/it-edu"
+                class="text-lg font-medium hover:underline"
+                target="_blank"
+                >KIC 캠퍼스</a
+              >
+            </div>
+            <div class="text-gray-300">
+              [AWS 클라우드 기반] 자바 & 스프링 활용 풀스택 개발
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="bg-gray-800 rounded-lg p-4">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between mb-2"
+            >
+              <div class="text-sm text-gray-400">2024.04 ~ 2025.11</div>
+              <div class="text-sm text-gray-400">학습중</div>
+            </div>
+            <div class="mb-2">
+              <a
+                href="https://sesac.seoul.kr/common/greeting.do"
+                class="text-lg font-medium hover:underline"
+                target="_blank"
+                >SeSAC 청년취업사관학교</a
+              >
+            </div>
+            <div class="text-gray-300">
+              AWS 클라우드를 활용한 MSA 기반 자바 개발자 양성 과정
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center"
+      >
+        <!-- 소셜 미디어/연락처 링크 -->
+        <div class="flex space-x-6" id="contact-me">
+          <a
+            href="https://github.com/namung08"
+            class="hover:text-white"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <!-- GitHub 아이콘 -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+              color="currentColor"
+            >
+              <path
+                d="M16 22.0268V19.1568C16.0375 18.68 15.9731 18.2006 15.811 17.7506C15.6489 17.3006 15.3929 16.8902 15.06 16.5468C18.2 16.1968 21.5 15.0068 21.5 9.54679C21.4997 8.15062 20.9627 6.80799 20 5.79679C20.4558 4.5753 20.4236 3.22514 19.91 2.02679C19.91 2.02679 18.73 1.67679 16 3.50679C13.708 2.88561 11.292 2.88561 8.99999 3.50679C6.26999 1.67679 5.08999 2.02679 5.08999 2.02679C4.57636 3.22514 4.54413 4.5753 4.99999 5.79679C4.03011 6.81549 3.49251 8.17026 3.49999 9.57679C3.49999 14.9968 6.79998 16.1868 9.93998 16.5768C9.61098 16.9168 9.35725 17.3222 9.19529 17.7667C9.03334 18.2112 8.96679 18.6849 8.99999 19.1568V22.0268"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M9 20.0267C6 20.9999 3.5 20.0267 2 17.0267"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://namung08.tistory.com/"
+            class="hover:text-white"
+            target="_blank"
+            aria-label="Tech Blog"
+          >
+            <!-- Blog 아이콘 -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 459 459"
+              aria-hidden="true"
+            >
+              <title>티스토리 로고</title>
+              <g>
+                <path
+                  d="M229.5,0C102.75,0,0,102.75,0,229.5S102.75,459,229.5,459,459,356.25,459,229.5,356.25,0,229.5,0ZM130.21,191.45a39.57,39.57,0,1,1,39.56-39.57A39.58,39.58,0,0,1,130.21,191.45ZM229.5,390a39.56,39.56,0,1,1,39.56-39.56A39.56,39.56,0,0,1,229.5,390Zm0-99.29a39.56,39.56,0,1,1,39.56-39.56A39.56,39.56,0,0,1,229.5,290.74Zm0-99.29a39.57,39.57,0,1,1,39.56-39.57A39.57,39.57,0,0,1,229.5,191.45ZM328.79,191.45a39.57,39.57,0,1,1,39.57-39.57A39.57,39.57,0,0,1,328.79,191.45Z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 저작권 정보 -->
+      <div class="mt-8 text-center text-gray-500 text-sm">
+        &copy; 2023 이상준. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+Tailwind CSS 반응형 접두사 정리:
+Tailwind는 모바일 퍼스트 접근 방식을 사용합니다. 기본 스타일은 모든 화면에 적용되며, 
+다음 접두사를 사용하여 특정 Breakpoint(화면 너비) 이상에서만 적용되는 스타일을 지정합니다.
+
+- sm: Small screens (640px 이상)
+- md: Medium screens (768px 이상)
+- lg: Large screens (1024px 이상)
+- xl: Extra large screens (1280px 이상)
+- 2xl: 2 Extra large screens (1536px 이상)
+
+예시:
+- class="text-center md:text-left"
+  - 모든 화면에서 텍스트 가운데 정렬
+  - md (768px) 이상 화면에서 텍스트 왼쪽 정렬
+
+- class="flex flex-col lg:flex-row"
+  - 기본적으로 세로 방향 flex (모바일)
+  - lg (1024px) 이상 화면에서 가로 방향 flex
+
+- class="px-4 sm:px-6 lg:px-8"
+  - 기본 좌우 패딩 4단위
+  - sm (640px) 이상에서 6단위
+  - lg (1024px) 이상에서 8단위
+-->
