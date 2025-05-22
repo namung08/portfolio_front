@@ -3,8 +3,8 @@ import AboutMe from "./components/AboutMe";
 import { Activity } from "./components/Activity";
 import Footer from "./components/Footer";
 import developerImg from "./assets/img/developer.jpg";
-import { educationInfo } from "./components/data/educationInfo";
-import { personalHistory } from "./components/data/personalHistory";
+import { educationInfo } from "./data/educationInfo";
+import { personalHistory } from "./data/personalHistory";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import profileImg from "../assets/img/img.jpg";
-import { info } from "./data/portfolioInfo";
+import { info } from "../data/portfolioInfo";
 
 const profileInfo = () => {
   return info.map((item) => (

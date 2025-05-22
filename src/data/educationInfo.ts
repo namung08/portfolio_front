@@ -1,4 +1,4 @@
-import type { ActivityItemProps } from "../Activity";
+import type { ActivityItemProps } from "../components/Activity";
 
 export const educationInfo: ActivityItemProps[] = [
   {
