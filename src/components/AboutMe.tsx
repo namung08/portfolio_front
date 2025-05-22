@@ -1,5 +1,48 @@
 import profileImg from "../assets/img/img.jpg";
 
+const profileInfo = () => {
+  const info = [
+    {
+      title: "🎂 Birth",
+      content: "2001.03.27",
+    },
+    {
+      title: "✉️ E-Mail",
+      content: "namung08@gmail.com",
+      link: "mailto:namung08@gmail.com",
+    },
+    {
+      title: "🐱 Github",
+      content: "github.com/namung08",
+      link: "https://github.com/namung08",
+    },
+    {
+      title: "💾 Tech Blog",
+      content: "namung08.tistory.com",
+      link: "https://namung08.tistory.com/",
+    },
+  ];
+
+  return info.map((item) => (
+    <section key={item.title}>
+      <p className="pb-3">{item.title}</p>
+      {item.link ? (
+        <p className="pb-3">
+          <a
+            href={item.link}
+            target="_blank"
+            className="text-gray-400 hover:underline"
+          >
+            {item.content}
+          </a>
+        </p>
+      ) : (
+        <p className="pb-3">{item.content}</p>
+      )}
+    </section>
+  ));
+};
+
 const AboutMe = () => {
   return (
     <section className="mb-10">
@@ -32,45 +75,7 @@ const AboutMe = () => {
           />
         </div>
         <div className="pl-0 md:pl-10 flex-1 pt-5 md:pt-10 text-center md:text-left">
-          <section>
-            <p className="pb-3">🎂 Birth</p>
-            <p className="pb-3">2001.03.27</p>
-          </section>
-          <section>
-            <p className="pb-3">✉️ E-Mail</p>
-            <p className="pb-3">
-              <a
-                href="mailto:namung08@gmail.com"
-                className="text-gray-400 hover:underline"
-              >
-                namung08@gmail.com
-              </a>
-            </p>
-          </section>
-          <section>
-            <p className="pb-3">🐱 Github</p>
-            <p className="pb-3">
-              <a
-                href="https://github.com/namung08"
-                className="text-gray-400 hover:underline"
-                target="_blank"
-              >
-                github.com/namung08
-              </a>
-            </p>
-          </section>
-          <section>
-            <p className="pb-3">💾 Tech Blog</p>
-            <p className="pb-3">
-              <a
-                href="https://namung08.tistory.com/"
-                className="text-gray-400 hover:underline"
-                target="_blank"
-              >
-                namung08.tistory.com
-              </a>
-            </p>
-          </section>
+          {profileInfo()}
         </div>
       </div>
       <div className="mt-10">
