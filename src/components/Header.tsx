@@ -28,10 +28,10 @@ const Header = () => {
                 About Me
               </a>
               <a
-                href="#education"
+                href="#activity"
                 className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700"
               >
-                Education
+                Activity
               </a>
             </div>
           </div>
@@ -92,18 +92,18 @@ const Header = () => {
             About Me
           </a>
           <a
-            href="#education"
+            href="#activity"
             className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700"
           >
             Education
           </a>
-          <a
+          {/* <a
             href="https://www.notion.so/namung08/Hi-I-m-Sang-Jun-aa1b4285642c4c12a34dff895c3f05df?pvs=4#b7696f22d8ef4ecb981cd4ebcb18e6b9"
             className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700"
             target="_blank"
           >
             Projects
-          </a>
+          </a> */}
           <a
             href="#contact-me"
             className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700"

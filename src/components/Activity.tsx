@@ -54,7 +54,7 @@ interface ActivityProps {
 
 export const Activity = ({ title, content }: ActivityProps) => {
   return (
-    <section className="mb-5" id="education">
+    <section className="mb-5" id="activity">
       <p className="text-3xl font-bold">{title}</p>
       <hr className="border-t border-gray-700 my-3 w-full" />
       <div className="grid grid-cols-1 gap-4">
