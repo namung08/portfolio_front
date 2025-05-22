@@ -1,28 +1,7 @@
 import profileImg from "../assets/img/img.jpg";
+import { info } from "./data/portfolioInfo";
 
 const profileInfo = () => {
-  const info = [
-    {
-      title: "🎂 Birth",
-      content: "2001.03.27",
-    },
-    {
-      title: "✉️ E-Mail",
-      content: "namung08@gmail.com",
-      link: "mailto:namung08@gmail.com",
-    },
-    {
-      title: "🐱 Github",
-      content: "github.com/namung08",
-      link: "https://github.com/namung08",
-    },
-    {
-      title: "💾 Tech Blog",
-      content: "namung08.tistory.com",
-      link: "https://namung08.tistory.com/",
-    },
-  ];
-
   return info.map((item) => (
     <section key={item.title}>
       <p className="pb-3">{item.title}</p>
@@ -88,6 +67,22 @@ const AboutMe = () => {
           </li>
           <li>
             개발 과정에서 유지보수를 위해서 코드를 어떻게 짜야할지 생각합니다.
+          </li>
+          <li>
+            <strong>팀 프로젝트</strong>에서 적극적인 커뮤니케이션과 협업을 통해
+            프로젝트를 성공적으로 완수한 경험이 있습니다.
+          </li>
+          <li>
+            새로운 기술을 배우는 것을 좋아하며, <strong>GitHub</strong>를 통해
+            지속적으로 코드를 작성하고 실습하며 성장하고 있습니다.
+          </li>
+          <li>
+            <strong>문제 해결 능력</strong>을 바탕으로 복잡한 기술적 과제를
+            해결하기 위해 노력합니다.
+          </li>
+          <li>
+            <strong>시간 관리</strong>와 <strong>일정 준수</strong>를
+            중요시하며, 프로젝트 마감일을 지키는 것을 최우선으로 생각합니다.
           </li>
         </ul>
       </div>
