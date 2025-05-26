@@ -1,6 +1,7 @@
 import currency_converter from "../assets/project/Currency Converter/first.png";
 import check_currency_code from "../assets/project/Currency Converter/currency_code.png";
 import selling_buying from "../assets/project/Currency Converter/Selling&Buying.png";
+import todo_thumnail from "../assets/project/todo list/todolist.png";
 import todo_main from "../assets/project/todo list/main.png";
 import todo_main_cookie from "../assets/project/todo list/maincookie.png";
 import todo_add from "../assets/project/todo list/add.png";
@@ -124,7 +125,7 @@ export const personal_projects: projectProps[] = [
   },
   {
     title: "todo-list",
-    thumbnail: todo_main,
+    thumbnail: todo_thumnail,
     period: "2025.04.25",
     tag: ["React", "TypeScript", "Vite"],
     one_line_description: "쿠키를 사용하여 Todo List를 생성하는 웹 페이지",
@@ -208,7 +209,6 @@ export const personal_projects: projectProps[] = [
     one_line_description: "Spring Boot와 React를 활용한 메모 웹 애플리케이션",
     developer: "개인",
     github_link: "github.com/namung08/memo_web_application",
-    project_link: "https://memo-web-application.vercel.app",
     detail: [
       "Spring Boot와 React(Vite + TypeScript)를 사용한 메모 웹 애플리케이션",
       "MariaDB를 활용한 데이터 영구 저장 기능 구현",
