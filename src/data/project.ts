@@ -1,10 +1,13 @@
-import currency_converter from "./assets/project/Currency Converter/first.png";
-import check_currency_code from "./assets/project/Currency Converter/currency_code.png";
-import selling_buying from "./assets/project/Currency Converter/Selling&Buying.png";
-import todo_main from "./assets/project/todo list/main.png";
-import todo_main_cookie from "./assets/project/todo list/maincookie.png";
-import todo_add from "./assets/project/todo list/add.png";
-import todo_add_cookie from "./assets/project/todo list/cookie.png";
+import currency_converter from "../assets/project/Currency Converter/first.png";
+import check_currency_code from "../assets/project/Currency Converter/currency_code.png";
+import selling_buying from "../assets/project/Currency Converter/Selling&Buying.png";
+import todo_main from "../assets/project/todo list/main.png";
+import todo_main_cookie from "../assets/project/todo list/maincookie.png";
+import todo_add from "../assets/project/todo list/add.png";
+import todo_add_cookie from "../assets/project/todo list/cookie.png";
+import memo_main from "../assets/project/memo/main.png";
+import memo_write from "../assets/project/memo/write.png";
+import memo_edit from "../assets/project/memo/edit.png";
 
 export interface projectProps {
   title: string;
@@ -194,6 +197,79 @@ export const personal_projects: projectProps[] = [
         analysis: "TypeScript의 타입 시스템을 효과적으로 활용하지 못했습니다.",
         solve:
           "인터페이스를 정의하고 제네릭을 활용하여 타입 안정성을 높였습니다. 이를 통해 개발 시 발생할 수 있는 타입 관련 오류를 사전에 방지할 수 있었습니다.",
+      },
+    ],
+  },
+  {
+    title: "메모 웹 애플리케이션",
+    thumbnail: memo_main,
+    period: "2025.05.13 - 2025.05.19",
+    tag: ["Spring Boot", "React", "TypeScript", "MariaDB", "Docker"],
+    one_line_description: "Spring Boot와 React를 활용한 메모 웹 애플리케이션",
+    developer: "개인",
+    github_link: "github.com/namung08/memo_web_application",
+    project_link: "https://memo-web-application.vercel.app",
+    detail: [
+      "Spring Boot와 React(Vite + TypeScript)를 사용한 메모 웹 애플리케이션",
+      "MariaDB를 활용한 데이터 영구 저장 기능 구현",
+      "Docker Compose를 통한 개발 및 배포 환경 컨테이너화",
+      "메모 CRUD 기능 구현 및 사용자 편의성 고려한 UI 설계",
+    ],
+    intro: [
+      {
+        title: "메인 페이지",
+        thumbnail: [memo_main],
+        detail: [
+          "메모 목록 확인 기능",
+          "새 메모 작성 버튼을 통한 메모 추가 기능",
+          "간단하고 직관적인 UI/UX 설계",
+        ],
+      },
+      {
+        title: "메모 작성 및 수정",
+        thumbnail: [memo_write, memo_edit],
+        detail: [
+          "제목과 내용을 입력하여 메모 작성",
+          "기존 메모 수정 기능",
+          "사용자 친화적인 입력 폼 구현",
+        ],
+      },
+    ],
+    role: [
+      "Spring Boot와 React를 사용한 프론트엔드/백엔드 연동",
+      "Docker Compose를 활용한 개발 및 배포 환경 구성",
+      "Cursor를 통한 프론트엔드 페이지 및 Docker 설정",
+    ],
+    impressions: [
+      {
+        title: "풀스택 개발 경험",
+        detail:
+          "Spring Boot와 React를 사용한 웹 애플리케이션 개발 경험을 쌓았습니다. 프론트엔드와 백엔드 간의 통신 문제 해결 과정에서 다양한 기술적 문제를 진단하고 해결하는 능력을 향상시켰습니다.",
+      },
+      {
+        title: "컨테이너화와 배포 경험",
+        detail:
+          "Docker Compose를 활용한 컨테이너화 환경에서의 개발 및 배포 경험을 얻었습니다. 초기 Nginx 배포 시도 및 CORS 문제 해결 과정을 통해 실제 운영 환경에서 발생할 수 있는 문제를 해결하는 능력을 향상시켰습니다.",
+      },
+    ],
+    troubleshooting: [
+      {
+        title: "CORS 문제 해결",
+        problem:
+          "초기 Nginx를 통한 프론트엔드 배포 시 CORS 오류가 발생했습니다.",
+        analysis:
+          "프론트엔드와 백엔드의 도메인이 다르면서 발생한 CORS 정책 문제였습니다.",
+        solve:
+          "React 페이지를 정적 파일로 빌드하여 Spring Boot 애플리케이션에서 서빙하도록 변경했습니다. 이를 통해 CORS 문제를 해결하고 배포 구조를 단순화했습니다.",
+      },
+      {
+        title: "Docker 환경 구성",
+        problem:
+          "개발 환경과 배포 환경의 일관성을 유지하는 데 어려움이 있었습니다.",
+        analysis:
+          "로컬 개발 환경과 서버 환경의 차이로 인한 문제가 발생했습니다.",
+        solve:
+          "Docker Compose를 활용하여 개발 및 배포 환경을 컨테이너화했습니다. 이를 통해 환경 차이로 인한 문제를 해결하고 일관된 개발/배포 환경을 구축했습니다.",
       },
     ],
   },
