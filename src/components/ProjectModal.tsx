@@ -46,14 +46,14 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
               <img
                 src={project.thumbnail}
                 alt={project.title}
-                className="w-full md:w-[300px] h-[200px] object-cover rounded-lg shadow-md"
+                className="w-full md:w-[300px] h-[300px] object-cover rounded-lg shadow-md"
               />
               <div className="flex-1">
                 <h2 className="text-3xl font-bold text-gray-100 mb-4">
                   {project.title}
                 </h2>
                 <p className="text-gray-300 mb-4">{project.period}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tag.map((tag, index) => (
                     <span
                       key={index}
@@ -63,12 +63,31 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                     </span>
                   ))}
                 </div>
+                <p className="text-base text-gray-300 mb-4 leading-relaxed">
+                  {project.one_line_description}
+                </p>
+                <div className="flex gap-4">
+                  <a
+                    href={project.github_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-gray-700 text-gray-100 rounded-lg font-medium hover:bg-gray-600 transition-colors"
+                  >
+                    GitHub
+                  </a>
+                  {project.project_link && (
+                    <a
+                      href={project.project_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-500 transition-colors"
+                    >
+                      프로젝트 보기
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
-
-            <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-              {project.one_line_description}
-            </p>
 
             <div className="mb-8">
               <h3 className="text-2xl font-semibold text-gray-100 mb-4">
@@ -173,27 +192,6 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="flex gap-4 mt-8">
-              <a
-                href={project.github_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-gray-700 text-gray-100 rounded-lg font-medium hover:bg-gray-600 transition-colors"
-              >
-                GitHub
-              </a>
-              {project.project_link && (
-                <a
-                  href={project.project_link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-500 transition-colors"
-                >
-                  프로젝트 보기
-                </a>
-              )}
             </div>
           </div>
         </div>
