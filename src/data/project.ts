@@ -1,6 +1,10 @@
 import currency_converter from "./assets/project/Currency Converter/first.png";
 import check_currency_code from "./assets/project/Currency Converter/currency_code.png";
 import selling_buying from "./assets/project/Currency Converter/Selling&Buying.png";
+import todo_main from "./assets/project/todo list/main.png";
+import todo_main_cookie from "./assets/project/todo list/maincookie.png";
+import todo_add from "./assets/project/todo list/add.png";
+import todo_add_cookie from "./assets/project/todo list/cookie.png";
 
 export interface projectProps {
   title: string;
@@ -112,6 +116,84 @@ export const personal_projects: projectProps[] = [
           "API 응답 데이터의 구조가 복잡하고, 실시간으로 데이터를 가져오는 과정에서 성능 이슈가 발생했습니다.",
         solve:
           "데이터를 캐싱하여 불필요한 API 호출을 줄이고, 필요한 데이터만 추출하여 사용자 인터페이스에 표시하도록 최적화했습니다. 또한 에러 처리 로직을 추가하여 API 호출 실패 시에도 안정적인 서비스를 제공할 수 있도록 했습니다.",
+      },
+    ],
+  },
+  {
+    title: "todo-list",
+    thumbnail: todo_main,
+    period: "2025.04.25",
+    tag: ["React", "TypeScript", "Vite"],
+    one_line_description: "쿠키를 사용하여 Todo List를 생성하는 웹 페이지",
+    developer: "개인",
+    github_link: "github.com/namung08/todo_list",
+    project_link: "https://todo-list-git-main-namung08s-projects.vercel.app",
+    detail: [
+      "React와 TypeScript를 활용한 현대적인 Todo List 애플리케이션",
+      "React Cookie를 활용한 데이터 영구 저장 기능 구현",
+      "할 일 추가, 수정, 삭제 기능 구현",
+      "반응형 디자인으로 모든 디바이스에서 최적화된 사용자 경험 제공",
+    ],
+    intro: [
+      {
+        title: "메인 화면",
+        thumbnail: [todo_main],
+        detail: [
+          "초기 웹 화면에서 ListNumber를 통해 추가되는 내용의 seq 값을 관리",
+          "전체 삭제 버튼을 통한 모든 할 일 목록 삭제 기능",
+        ],
+      },
+      {
+        title: "할 일 추가",
+        thumbnail: [todo_add],
+        detail: [
+          "Input 박스를 통해 새로운 할 일 추가",
+          "각 할 일마다 고유한 seq 값 부여",
+          "개별 삭제 버튼을 통한 선택적 삭제 기능",
+        ],
+      },
+      {
+        title: "쿠키 데이터 관리",
+        thumbnail: [todo_main_cookie, todo_add_cookie],
+        detail: [
+          "React Cookie를 활용한 데이터 영구 저장",
+          "ListNumber를 통한 seq 값 자동 증가 및 관리",
+          "페이지 새로고침 시에도 데이터 유지",
+        ],
+      },
+    ],
+    role: [
+      "React와 TypeScript를 활용한 프론트엔드 개발",
+      "React Cookie를 활용한 데이터 관리 구현",
+    ],
+    impressions: [
+      {
+        title: "첫 프론트엔드 프로젝트",
+        detail:
+          "학원에서 진행한 첫 프로젝트이자 프론트엔드 지식을 활용할 수 있는 좋은 기회였습니다. React와 TypeScript의 기본 개념을 실제 프로젝트에 적용하며 실력을 향상시킬 수 있었습니다.",
+      },
+      {
+        title: "데이터 저장 방식의 선택",
+        detail:
+          "처음에는 Local Storage나 Session Storage를 고려했지만, Cookie를 활용한 데이터 관리 방법을 학습하고자 Cookie를 선택했습니다. 이를 통해 웹 스토리지의 다양한 방식을 이해할 수 있었습니다.",
+      },
+    ],
+    troubleshooting: [
+      {
+        title: "쿠키 데이터 관리 최적화",
+        problem:
+          "쿠키에 데이터를 저장하고 관리하는 과정에서 성능 이슈가 발생했습니다.",
+        analysis:
+          "불필요한 쿠키 접근과 데이터 갱신으로 인한 성능 저하가 있었습니다.",
+        solve:
+          "쿠키 접근을 최소화하고, 필요한 데이터만 선택적으로 업데이트하도록 로직을 개선했습니다. 또한 데이터 구조를 최적화하여 쿠키 사용을 효율화했습니다.",
+      },
+      {
+        title: "TypeScript 타입 정의",
+        problem: "Todo 항목의 타입 정의와 상태 관리에 어려움이 있었습니다.",
+        analysis: "TypeScript의 타입 시스템을 효과적으로 활용하지 못했습니다.",
+        solve:
+          "인터페이스를 정의하고 제네릭을 활용하여 타입 안정성을 높였습니다. 이를 통해 개발 시 발생할 수 있는 타입 관련 오류를 사전에 방지할 수 있었습니다.",
       },
     ],
   },
