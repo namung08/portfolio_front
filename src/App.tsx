@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import developerImg from "./assets/img/developer.jpg";
 import { educationInfo } from "./data/educationInfo";
 import { personalHistory } from "./data/personalHistory";
+import ProjectList from "./components/ProjectList";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <AboutMe />
         <Activity title="🖥️ personal history" content={personalHistory} />
         <Activity title="📖 education" content={educationInfo} />
+        <ProjectList/>
       </main>
       <Footer />
     </div>
