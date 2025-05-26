@@ -1,3 +1,4 @@
+import exchanger_thumnail from "../assets/project/Currency Converter/exchanger.png"
 import currency_converter from "../assets/project/Currency Converter/first.png";
 import check_currency_code from "../assets/project/Currency Converter/currency_code.png";
 import selling_buying from "../assets/project/Currency Converter/Selling&Buying.png";
@@ -6,6 +7,7 @@ import todo_main from "../assets/project/todo list/main.png";
 import todo_main_cookie from "../assets/project/todo list/maincookie.png";
 import todo_add from "../assets/project/todo list/add.png";
 import todo_add_cookie from "../assets/project/todo list/cookie.png";
+import memo_thumnail from "../assets/project/memo/memo.png"
 import memo_main from "../assets/project/memo/main.png";
 import memo_write from "../assets/project/memo/write.png";
 import memo_edit from "../assets/project/memo/edit.png";
@@ -42,7 +44,7 @@ export interface projectProps {
 export const personal_projects: projectProps[] = [
   {
     title: "환율 계산기",
-    thumbnail: currency_converter,
+    thumbnail: exchanger_thumnail,
     period: "2024.01.08 ~ 2024.01.26",
     tag: ["JAVA", "JFrame", "Open API"],
     one_line_description: "한국수출입은행의 Open API를 사용한 환율 계산기",
@@ -203,7 +205,7 @@ export const personal_projects: projectProps[] = [
   },
   {
     title: "메모 웹 애플리케이션",
-    thumbnail: memo_main,
+    thumbnail: memo_thumnail,
     period: "2025.05.13 - 2025.05.19",
     tag: ["Spring Boot", "React", "TypeScript", "MariaDB", "Docker"],
     one_line_description: "Spring Boot와 React를 활용한 메모 웹 애플리케이션",
